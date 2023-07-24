@@ -9,7 +9,7 @@ const sequelize = new Sequelize(process.env.MYSQL_DATABASE, process.env.MYSQL_US
 
 try {
     sequelize.authenticate()
-    console.log('Sequelize conectado com sucesso')
+    console.log('MySQL conectado com sucesso')
 } catch (err) {
     console.log(`Nao foi possivel conectar: ${error}}`)
 } 
