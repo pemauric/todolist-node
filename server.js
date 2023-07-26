@@ -37,8 +37,8 @@ app.listen(port, (err) => {
 }); */
 
 conn
-.sync({force: true})
-//.sync()
+//.sync({force: true})
+.sync()
 .then( () => {
     app.listen(3000, () => {
         console.log(`Server listening on port ${port}`);

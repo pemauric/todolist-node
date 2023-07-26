@@ -1,3 +1,9 @@
+@keyframes pulse-animation {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
 body {
     background-color: rgba(0, 0, 0, 0.808);
     font-family: Fira Code, sans-serif;
@@ -17,8 +23,8 @@ body {
 }
 
 .navbar ul li a{
-    padding: 3px;
-    margin: 3px;
+    padding: 5px;
+    margin: 5px;
     text-decoration: none;
     color: white;
     border-radius: 5px;
@@ -26,5 +32,159 @@ body {
 
 .navbar ul li a:hover {
     background-color: rgba(128, 128, 128, 0.3);
+    
 }
 
+/* view create */
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.submit {
+    display: flex;
+    justify-content: center;
+}
+
+.submit input {
+    width: 100px;
+    height: 50px; 1px solid white;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-color: rgb(0, 128, 0);
+    cursor: pointer;
+}
+
+.form-control {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid rgba(128, 128, 128, 0.5) ;
+}
+
+.form-control:hover {
+}@keyframes pulse-animation {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+  }
+
+.form-control input {
+    width: 525px;
+    height: 25px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    border: none;
+}
+
+.form-control textarea {
+    width: 525px;
+    height: 105px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    border: none;
+}
+
+form-control input::placeholder {
+    color: white;
+}
+
+.form-control textarea::placeholder{
+    color: white;
+}
+
+.form-control input:hover {
+    background-color: rgba(128, 128, 128, 0.3) ;
+}
+
+.form-control textarea:hover {
+    background-color: rgba(128, 128, 128, 0.3) ;
+}
+
+/* view all */
+
+.task-list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    color: white;
+}
+
+.task-list li {
+    display: flex;
+    align-items: center; 
+    padding: 3px;
+    margin-bottom: 1px;
+    font-size: 1.5em;
+}
+
+.title {
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.title:hover {
+    border-radius: 5px;
+    background-color: rgba(128, 128, 128, 0.3);
+}
+
+a:visited {
+    color: white;
+}   
+
+.actions {
+    padding: 6px;
+    margin-left: 15px;
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between;
+}
+
+.actions i {
+    font-size: 1em;
+    margin: 2px;
+    padding: 2px;
+}
+
+.actions form {
+    display: flex; 
+    align-items: center; 
+}
+
+.actions button {
+    display: flex;
+    font-size: 1em;
+    align-items: center;
+    background-color: transparent;
+    border: none;   
+    cursor: pointer;
+}
+
+.bi.bi-check {
+    color: green;
+}
+
+.bi.bi-pencil-square {
+    color: orange; 
+}
+
+.bi.bi-trash3-fill {
+    color: red; 
+}
