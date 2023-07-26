@@ -188,3 +188,7 @@ a:visited {
 .bi.bi-trash3-fill {
     color: red; 
 }
+
+.title-done {
+    text-decoration: line-through;
+}
