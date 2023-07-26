@@ -15,6 +15,8 @@ router.get('/edit/:id', TaskController.editTask)
 
 router.post('/edit/update', TaskController.updateTask) 
 
+router.post('/updatestatus', TaskController.toggleTaskStatus)
+
 router.get('/', TaskController.showTasks)
 
 
