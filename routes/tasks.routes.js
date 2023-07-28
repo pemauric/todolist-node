@@ -13,7 +13,7 @@ router.post('/delete', TaskController.deleteTask)
 
 router.get('/edit/:id', TaskController.editTask)
 
-router.post('/edit/update', TaskController.updateTask) 
+router.post('/edit/update/:id', TaskController.updateTask) 
 
 router.post('/updatestatus', TaskController.toggleTaskStatus)
 
