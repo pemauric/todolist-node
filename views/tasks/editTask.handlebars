@@ -1,6 +1,6 @@
 <h1>Criacao de Task - {{task.title}}</h1>
 <div class="container">
-        <form action="/edit/{{task.id}}" method="POST">
+        <form action="/edit/update/{{task.id}}" method="POST">
             <div class="form-control">
                 <label for="title">Titulo: </label>
                 <input type="text" name="title" value="{{task.title}}" placeholder="Digite o titulo">
